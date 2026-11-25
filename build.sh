@@ -24,8 +24,8 @@ AAR="${GV_AAR:-libs/geckoview-69.aar}"
 # 版本号：v1.3.1 修广播菜单遮罩 + 节目单空档显示下一节目 + EPG 换新快照
 # 注意：aapt2 link 的 --version-code/--version-name 不覆盖 AndroidManifest 里的声明，
 #       要改版本号必须同时改 manifest，否则装上去还是旧版本号。
-VER="${VER:-1.3.1}"
-VERCODE="${VERCODE:-5}"
+VER="${VER:-1.3.2}"
+VERCODE="${VERCODE:-6}"
 
 for f in "$PLATFORM" "$BT/aapt2.exe" "$BT/lib/d8.jar" "$BT/lib/apksigner.jar" "$JAVAC" "$AAR"; do
     [ -f "$f" ] || { echo "[ERROR] 缺少 $f"; exit 1; }

@@ -778,12 +778,14 @@ class OverlayView extends FrameLayout {
             canvas.drawText(label, cx, cy + 22, p);
 
             // 音柱
+            // 最高一根到 cy+282，台名（54 号字）的 cap 顶在 cy+300 左右，
+            // 中间留十几个像素的空。原来音柱到 cy+310，字直接压在柱子上。
             p.setStrokeWidth(6);
             p.setColor(GREEN);
             for (int i = 0; i < 32; i++) {
                 float x = w / 2f - 400 + i * 25;
-                float amp = 16 + 44 * (float) Math.abs(Math.sin(i * 0.7 + t * 6.28));
-                canvas.drawLine(x, cy + 250 - amp, x, cy + 250 + amp, p);
+                float amp = 14 + 32 * (float) Math.abs(Math.sin(i * 0.7 + t * 6.28));
+                canvas.drawLine(x, cy + 236 - amp, x, cy + 236 + amp, p);
             }
 
             p.setTypeface(Typeface.DEFAULT_BOLD);

@@ -2,6 +2,10 @@
 
 在安卓电视盒子上像传统电视一样，用遥控器观看广东广播电视台的电视和广播频道。
 
+![电视直播](screenshots/tv.jpg)
+
+![广播界面](screenshots/radio.jpg)
+
 ## 项目说明
 
 应用内嵌 Firefox 的渲染引擎 GeckoView，启动后加载广东台官网的频道页面。
