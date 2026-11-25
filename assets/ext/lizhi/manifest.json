@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "lizhi-tv",
+  "version": "1.0",
+  "browser_specific_settings": {"gecko": {"id": "lizhi@newbox"}},
+  "description": "荔枝直播 TV 壳：隐藏移动版页面导航栏，兜底起播",
+  "content_scripts": [
+    {
+      "matches": ["*://*.gdtv.cn/*", "*://*.cctv.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}

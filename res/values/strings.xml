@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">荔枝直播</string>
+    <string name="acc_label">荔枝直播按键</string>
+    <string name="acc_desc">接收遥控器按键用于换台</string>
+</resources>

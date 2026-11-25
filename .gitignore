@@ -1,0 +1,23 @@
+# 构建产物
+out/
+build/
+*.apk
+*.idsig
+*.dex
+*.class
+
+# 第三方二进制：GeckoView AAR 约 150MB，自己准备
+libs/*.aar
+
+# 签名
+*.jks
+*.keystore
+keystore/
+
+# 抓取缓存
+.tmp/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
