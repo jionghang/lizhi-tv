@@ -6,6 +6,12 @@
 
 ![广播界面](screenshots/radio.jpg)
 
+## 下载
+
+安装包放在 Releases 页面，下载后直接装到盒子上即可。
+
+https://github.com/jionghang/lizhi-tv/releases
+
 ## 项目说明
 
 应用内嵌 Firefox 的渲染引擎 GeckoView，启动后加载广东台官网的频道页面。
